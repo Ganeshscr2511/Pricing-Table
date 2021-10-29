@@ -1,0 +1,85 @@
+body{
+  height:auto;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  background: #007bff;
+  background: linear-gradient(to right, #0062E6, #33AEFF);
+}
+
+.Price-component{
+  display: inline-flex;
+  background-color: #fff;
+  width: 300px;
+  height:500px;
+  border-radius: 1rem;
+  margin: 40px;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Header */
+.Price-component .header{
+  width: auto;
+  display: contents;
+}
+
+.title{
+  color: grey;
+}
+
+.titlePrice{
+  font-size: 40px;
+  font-weight: 600;
+  display: contents;
+  width: auto;
+}
+
+span{
+ display: inherit; 
+}
+
+hr{
+  width: 80%;
+}
+
+/* main */
+.main{
+  width: 245px;
+}
+.sub-list{
+  display:flex;
+  margin: 13px 0px;
+  align-items: center;
+}
+
+.available-icon{
+  padding-right: 14px;
+  width: 16px;
+}
+.unavailable-icon{
+  opacity: 0.7;
+}
+
+.btn{
+  font-size: 24px;
+    width: 215px;
+    padding: 12px 0px;
+    border: none;
+    border-radius: 25px;
+    color: #fff;
+    background-color: #0062E6;
+    opacity: 0.8;
+    transition: all 0.2s;
+}
+
+
+@media (min-width: 992px) {
+  .Price-component:hover {
+    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.3);
+  }
+
+  .Price-component:hover .btn {
+    opacity: 1;
+  }
+}
